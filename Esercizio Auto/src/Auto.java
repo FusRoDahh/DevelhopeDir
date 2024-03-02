@@ -4,7 +4,9 @@ public class Auto {
     private String marca;
     private String modello;
 
-    public Auto(String marca, String modello){
+    public Auto(int cilindrata, String targa, String marca, String modello) {
+        this.cilindrata = cilindrata;
+        this.targa = targa;
         this.marca = marca;
         this.modello = modello;
     }
@@ -41,4 +43,11 @@ public class Auto {
         this.targa = targa;
     }
 
+    @Override
+    public String toString() {
+        return "Marca: " + marca + '\n' +
+               "Modello: " + modello + '\n' +
+               "Cilindrata: " + cilindrata + '\n' +
+               "Targa: " + targa + '\n';
+    }
 }
