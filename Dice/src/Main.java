@@ -9,6 +9,7 @@ La Peculiarità è che si può solo salire di taglia (se ho usato un d6 al turno
 se arriviamo alla fine, per ricominciare scartiamo un dado che sarà fuori dalla partita
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -40,10 +41,21 @@ public class Main {
         }
         //dichiarazione giocatori
 
+        System.out.println(Arrays.toString(players[1].getDices()));
+
         System.out.println("""
-                \n\nArriviamo quindi ora alle regole del nostro gioco:
+                \n
+                Arriviamo quindi ora alle regole del nostro gioco:
                 Ognuno di voi ha 5 dadi. Un d4, un d6, un d8, un d10 e d12.
-                All'inizio di ogni turno ognuno di voi sceglie un dado, senza dire quale, e lo lancia.""");
+                All'inizio di ogni turno ognuno di voi sceglie un dado, senza dire quale, e lo lancia.
+                Se alcuni dadi danno lo stesso risultato vengono scartati a prescindere.
+                Chi ha fatto il tiro più alto ruba un altro dei dadi lanciati, a sua scelta.
+                
+                Dopodiché si rilancia, tirando il dado di una taglia più grande.
+                Dopo aver tirato il D12 si ricomincia dal primo, ma prima di tirare bisogna scartare il dado più piccolo.
+                Perde chi resta senza dadi, vince chi alla fine è l'unico con almeno un dado.
+                
+                """);
         //presentazione regole del gioco
 
 
