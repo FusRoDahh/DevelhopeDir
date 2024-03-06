@@ -7,4 +7,5 @@ public class Main {
         System.out.println("L'area del rettangolo è: " + rettangolo.calcolaArea());
 
     }
+
 }

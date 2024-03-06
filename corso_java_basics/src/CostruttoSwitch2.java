@@ -1,6 +1,13 @@
+import java.util.Scanner;
+
 public class CostruttoSwitch2 {
     public static void main(String[] args) {
-        String op = "*";
+
+        Scanner scanner = new Scanner(System.in);
+
+        int num = scanner.nextInt();
+
+                String op = "*";
 
         System.out.println("L'operatore matematico indicato è: " + findOperator(op));
         //stampiamo il risultato
