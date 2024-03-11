@@ -1,15 +1,3 @@
-/*
-Ognuno ha una mano di: D4-D6-D8-D10-D12
-Ognuno tira un dado a sua scelta in segreto
-(fino a quando non atterrano nessuno sa che dado stai tirando)
-e per vedere chi vince il round si conta chi ha ottenuto il risultato maggiore,
-ma i risultati pari si scartano. Chi perde o vede il suo dado rubato da chi vince
-o in caso di pareggio i dadi vengono messi fuori dal gioco
-La Peculiarità è che si può solo salire di taglia (se ho usato un d6 al turno dopo userò il d8)
-se arriviamo alla fine, per ricominciare scartiamo un dado che sarà fuori dalla partita
-*/
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -41,13 +29,11 @@ public class Main {
         }
         //dichiarazione giocatori
 
-        System.out.println(Arrays.toString(players[1].getDices()));
-
         System.out.println("""
                 \n
                 Arriviamo quindi ora alle regole del nostro gioco:
                 Ognuno di voi ha 5 dadi. Un d4, un d6, un d8, un d10 e d12.
-                All'inizio di ogni turno ognuno di voi sceglie un dado, senza dire quale, e lo lancia.
+                All'inizio di ogni turno ognuno di voi sceglie un dado e lo lancia.
                 Se alcuni dadi danno lo stesso risultato vengono scartati a prescindere.
                 Chi ha fatto il tiro più alto ruba un altro dei dadi lanciati, a sua scelta.
                 
@@ -58,6 +44,31 @@ public class Main {
                 """);
         //presentazione regole del gioco
 
+        System.out.println("\nIniziamo. Ognuno di voi scelga un dado da cui partire!");
+        System.out.println("\nDigita 1 per lanciare il d4, 2 per il d6, 3 per il d8, 4 per il d10, 5 per il d12.");
+        for (int i = 0; i < playNum; i++) {
+            System.out.println(players[i].getNickname() + " con quale dado vuoi iniziare?");
+            int start = numScan.nextInt();
+            players[i].setStartDice(start-1);
+        }
+        //scelta del dado iniziale
+
+        System.out.println("\n\nVia con la prima mano. Lanciamo:");
+        int[] results = new int[playNum];
+        for (int i = 0; i < playNum; i++) {
+            System.out.println(players[i].getNickname() + " - Punteggio: " + players[i].lanciaDado(players[i].getStartDice()));
+            results[i] = players[i].lanciaDado(players[i].getStartDice());
+        }
+        //primo lancio
+
+        for(int i = 0; i < playNum; i++) {
+            for(int j = 0; j < playNum; j++){
+                if(results[i] == results[j]){
+                    System.out.println(players[i] + " perde il dado");
+
+                }
+            }
+        }
 
     }
 }

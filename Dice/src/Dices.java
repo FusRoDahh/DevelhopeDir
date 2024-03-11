@@ -1,20 +1,15 @@
-import java.util.Random;
-
 public class Dices {
-    private Random random;
+    private final String diceName;
 
-    private String diceName;
-
-    private int faceNum;
+    private final int faceNum;
 
     public Dices(int faceNum, String diceName) {
-        this.random = new Random();
         this.faceNum = faceNum;
         this.diceName = diceName;
     }
 
-    public int lancia() {
-        return random.nextInt(faceNum)+1;
+    public int getFaceNum() {
+        return faceNum;
     }
 
     @Override
