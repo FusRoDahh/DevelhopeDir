@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClassiAstratte/ClassiAstratte.iml" filepath="$PROJECT_DIR$/ClassiAstratte/ClassiAstratte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DevelhopeCheckpoint/DevelhopeCheckpoint.iml" filepath="$PROJECT_DIR$/DevelhopeCheckpoint/DevelhopeCheckpoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DevelhopeDir.iml" filepath="$PROJECT_DIR$/.idea/DevelhopeDir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dice/Dice.iml" filepath="$PROJECT_DIR$/Dice/Dice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ereditarieta1/Ereditarieta1.iml" filepath="$PROJECT_DIR$/Ereditarieta1/Ereditarieta1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ereditarieta2/Ereditarieta2.iml" filepath="$PROJECT_DIR$/Ereditarieta2/Ereditarieta2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio Auto/Esercizio Auto.iml" filepath="$PROJECT_DIR$/Esercizio Auto/Esercizio Auto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio Studente/Esercizio Studente.iml" filepath="$PROJECT_DIR$/Esercizio Studente/Esercizio Studente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaccia/Interfaccia.iml" filepath="$PROJECT_DIR$/Interfaccia/Interfaccia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Advanced/Java Advanced.iml" filepath="$PROJECT_DIR$/Java Advanced/Java Advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boh1/boh1.iml" filepath="$PROJECT_DIR$/boh1/boh1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/corso_java_basics/corso_java_basics.iml" filepath="$PROJECT_DIR$/corso_java_basics/corso_java_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
