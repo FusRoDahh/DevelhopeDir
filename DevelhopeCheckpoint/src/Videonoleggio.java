@@ -38,9 +38,6 @@ public class Videonoleggio {
         for (int i = 0; i < 500; i++) {
             if (films[i] != null && films[i].getGenere().equalsIgnoreCase(genere)) {
                 System.out.println(films[i]);
-            } else if (films[i] != null && films[i].getGenere() == null && films[i].getGenere() != genere) {
-                System.out.println("Non abbiamo nessun film del genere selezionato!");
-                break;
             }
         }
     }

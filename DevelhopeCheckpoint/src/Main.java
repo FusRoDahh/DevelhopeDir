@@ -28,9 +28,9 @@ public class Main {
         videonoleggio.aggiungiFilm(film2);
         videonoleggio.aggiungiFilm(film3);
 
-        //videonoleggio.listaFilm();
+        videonoleggio.listaFilm();
 
-        videonoleggio.ricercaGenere("Romantico");
+        videonoleggio.ricercaGenere("Azione");
 
     }
 }
